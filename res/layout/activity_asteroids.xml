@@ -1,14 +1,43 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Asteroids" >
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"	
+	android:layout_width="fill_parent"	
+	android:layout_height="fill_parent"	
+	android:gravity="center"	
+	android:padding="30dip"	
+	tools:context=".Asteroids" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
+	<TextView 
+		android:layout_width="fill_parent"		
+		android:layout_height="wrap_content"		
+		android:text="@string/app_title"		
+		android:gravity="center"		
+		android:textSize="25sp "		
+		android:layout_marginBottom="20dip"/>
 
-</RelativeLayout>
+	<Button android:id="@+id/StartButton"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:text="@string/start"/>
+
+	<Button android:id="@+id/ConfigureButton"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:text="@string/configure"/>
+
+	<Button android:id="@+id/AboutButton"	
+		android:layout_height="wrap_content"		
+		android:layout_width="fill_parent"		
+		android:text="@string/about"/>
+	
+	<Button android:id="@+id/ExitButton"	
+		android:layout_height="wrap_content"		
+		android:layout_width="fill_parent"		
+		android:text="@string/exit"/>
+</LinearLayout>
+
+ 
+
+
+
