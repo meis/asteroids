@@ -5,13 +5,24 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class Asteroids extends Activity {
+	private Button bAbout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_asteroids);
+        
+		bAbout = (Button) findViewById(R.id.AboutButton);
+		
+		bAbout.setOnClickListener(new OnClickListener() {
+			public void onClick(View view) {
+				launchAbout(null);
+			}
+		});
     }
 
     @Override
