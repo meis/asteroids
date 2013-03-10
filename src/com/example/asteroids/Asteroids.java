@@ -12,6 +12,7 @@ import android.widget.Button;
 public class Asteroids extends Activity {
 	private Button bAbout;
 	private Button bExit;
+	private Button bConfig;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,14 @@ public class Asteroids extends Activity {
 				finish();
 			}
 		});
+		
+		bConfig = (Button) findViewById(R.id.ConfigureButton);
+		
+		bConfig.setOnClickListener(new OnClickListener() {
+			public void onClick(View view) {
+				launchConfiguration(null);
+			}
+		});
     }
 
     @Override
@@ -48,6 +57,9 @@ public class Asteroids extends Activity {
 			case R.id.about:		
 				launchAbout(null);	
 				break;	
+			case R.id.config:
+				launchConfiguration(null);
+				break;
 		}
 		
 		return true; 
@@ -55,6 +67,11 @@ public class Asteroids extends Activity {
     
     public void launchAbout(View view) {
     	Intent i = new Intent(this, About.class);
+    	startActivity(i);
+    }
+    
+    public void launchConfiguration(View view) {
+    	Intent i = new Intent(this, Configuration.class);
     	startActivity(i);
     }
     

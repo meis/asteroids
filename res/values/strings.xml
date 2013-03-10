@@ -9,5 +9,12 @@
 	<string name="configuration">Configuration</string>
 	<string name="about">About</string>
 	<string name="about_text">This is an Asteroids game.</string>
-	<string name="exit">Exit</string>
+	<string name="exit">Exit</string>	
+	
+	<string name="pref_music_title">Music</string>	
+	<string name="pref_music_summary">The game will reproduce music</string>
+	<string name="pref_graphics_title">Graphic type</string>	
+	<string name="pref_graphics_summary">Choose the graphic representation</string>
+	<string name="pref_pieces_title">Number of pieces</string>	
+	<string name="pref_pieces_summary">How many pieces will asteroids be divided</string>
 </resources>
