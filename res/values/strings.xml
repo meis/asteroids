@@ -7,5 +7,6 @@
 	<string name="start">Start</string>
 	<string name="configure">Configure</string>
 	<string name="about">About</string>
+	<string name="about_text">Este programa ha sido desarrollado como ejemplo en el curso de Android para demostrar cómo se pueden lanzar nuevas actividades desde la actividad principal.</string>
 	<string name="exit">Exit</string>
 </resources>

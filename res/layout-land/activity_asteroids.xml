@@ -6,7 +6,7 @@
 	android:layout_height="fill_parent"	
 	android:gravity="center"	
 	android:padding="30dip"	
-	tools:context=".Asteroids" >
+	tools:context=".Asteroids">
 
 	<TextView 
 		android:layout_width="fill_parent"		
@@ -38,7 +38,8 @@
 		    <Button android:id="@+id/AboutButton"	
 				android:layout_height="wrap_content"		
 				android:layout_width="fill_parent"		
-				android:text="@string/about"/>
+				android:text="@string/about"
+				android:onClick="launchAbout"/>
 			
 			<Button android:id="@+id/ExitButton"	
 				android:layout_height="wrap_content"		
