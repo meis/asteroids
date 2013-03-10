@@ -10,6 +10,7 @@ import android.widget.Button;
 
 public class Asteroids extends Activity {
 	private Button bAbout;
+	private Button bExit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,14 @@ public class Asteroids extends Activity {
 		bAbout.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
 				launchAbout(null);
+			}
+		});
+		
+		bExit = (Button) findViewById(R.id.ExitButton);
+		
+		bExit.setOnClickListener(new OnClickListener() {
+			public void onClick(View view) {
+				finish();
 			}
 		});
     }

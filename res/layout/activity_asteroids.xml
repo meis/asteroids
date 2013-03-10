@@ -35,7 +35,8 @@
 	<Button android:id="@+id/ExitButton"	
 		android:layout_height="wrap_content"		
 		android:layout_width="fill_parent"		
-		android:text="@string/exit"/>
+		android:text="@string/exit"
+		android:onClick="finish"/>
 </LinearLayout>
 
  
