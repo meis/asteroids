@@ -12,7 +12,7 @@ public class Scores extends ListActivity {
 		setContentView(R.layout.scores);		
 		setListAdapter(new ArrayAdapter<String>(this,		
 				android.R.layout.simple_list_item_1,
-				Asteroids.store.scoreList(10)));
+				Main.store.scoreList(10)));
 	 }
 
 }
