@@ -32,6 +32,12 @@
 		android:text="@string/about"
 		android:onClick="launchAbout"/>
 	
+	<Button android:id="@+id/ScoresButton"	
+		android:layout_height="wrap_content"		
+		android:layout_width="fill_parent"		
+		android:text="@string/scores"
+		android:onClick="launchScores"/>
+	
 	<Button android:id="@+id/ExitButton"	
 		android:layout_height="wrap_content"		
 		android:layout_width="fill_parent"		

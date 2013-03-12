@@ -24,6 +24,7 @@
         </activity>
         <activity android:name=".About" android:label="@string/about" android:theme="@android:style/Theme.Dialog"></activity>
         <activity android:name=".Configuration" android:label="@string/configuration"></activity>
+        <activity android:name=".Scores" android:label="@string/scores"></activity>
     </application>
 
 </manifest>

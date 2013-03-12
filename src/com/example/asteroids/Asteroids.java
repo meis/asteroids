@@ -13,6 +13,9 @@ public class Asteroids extends Activity {
 	private Button bAbout;
 	private Button bExit;
 	private Button bConfig;
+	private Button bScores;
+	
+	public static ScoreArray store = new ScoreArray();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +43,14 @@ public class Asteroids extends Activity {
 		bConfig.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
 				launchConfiguration(null);
+			}
+		});
+		
+		bScores = (Button) findViewById(R.id.ScoresButton);
+		
+		bScores.setOnClickListener(new OnClickListener() {
+			public void onClick(View view) {
+				launchScores(null);
 			}
 		});
     }
@@ -72,6 +83,11 @@ public class Asteroids extends Activity {
     
     public void launchConfiguration(View view) {
     	Intent i = new Intent(this, Configuration.class);
+    	startActivity(i);
+    }
+    
+    public void launchScores(View view) {
+    	Intent i = new Intent(this, Scores.class);
     	startActivity(i);
     }
     
