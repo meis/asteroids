@@ -1,0 +1,28 @@
+<RelativeLayout  
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="?android:attr/listPreferredItemHeight">
+
+	<ImageView android:id="@+id/score_list_icon"
+		android:layout_width="?android:attr/listPreferredItemHeight"
+		android:layout_height="fill_parent"
+		android:layout_alignParentLeft="true"
+		android:src="@drawable/asteroid2"/>
+
+	<TextView android:id="@+id/score_list_title"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/score_list_icon"
+		android:layout_alignParentTop="true"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:singleLine="true" />
+
+	<TextView android:id="@+id/score_list_subtitle"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:text="@string/lorem_ipsum"
+		android:layout_toRightOf="@id/score_list_icon"
+		android:layout_below="@id/score_list_title"
+		android:layout_alignParentBottom="true"
+		android:gravity="center"/>
+</RelativeLayout>
